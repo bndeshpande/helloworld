@@ -13,7 +13,7 @@ import org.junit.Test;
 import net.sourceforge.jwebunit.util.TestingEngineRegistry;
 
 
-public class HelloWorldServletTest {
+public class HelloServletTest {
     @Before
     public void prepare() {
         setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
