@@ -1,16 +1,14 @@
 package test.java.net.codejava.javaee;
 
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertLinkPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTitleEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
-import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTestingEngineKey;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertFormPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertFormElementPresent;
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextFieldEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTextField;
 import static net.sourceforge.jwebunit.junit.JWebUnit.submit;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextPresent;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -31,10 +29,6 @@ public class HelloServletTest {
         assertTitleEquals("Hello World");
 		assertFormPresent();
 		assertFormElementPresent("yourName");
-		//assertTextFieldEquals("yourName", "Enter your name here");
-        //assertLinkPresent("home");
-        //clickLink("home");
-        //assertTitleEquals("Home");
     }
     
     @Test
