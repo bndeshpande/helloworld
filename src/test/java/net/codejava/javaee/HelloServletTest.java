@@ -11,6 +11,7 @@ import static net.sourceforge.jwebunit.junit.JWebUnit.assertFormElementPresent;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextFieldEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTextField;
 import static net.sourceforge.jwebunit.junit.JWebUnit.submit;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextPresent;
 
 import org.junit.Before;
 import org.junit.Test;
