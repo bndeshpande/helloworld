@@ -17,7 +17,7 @@ public class HelloServletTest {
     @Before
     public void prepare() {
         setTestingEngineKey(TestingEngineRegistry.TESTING_ENGINE_HTMLUNIT); 
-        setBaseUrl("http://localhost:8080/junitwebapp");
+        setBaseUrl("http://localhost:9006/helloworld");
     }
 
     @Test
