@@ -5,13 +5,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Hello World Java EE</title>
+<title>Hello World</title>
 </head>
 <body>
 	<h1>Hello JSP and Servlet!</h1>
 	<form action="helloServlet" method="post">
 		Enter your name: <input type="text" name="yourName" size="20">
-		<input type="submit" value="Call Servlet" />
+		<input type="submit" name="callServlet" value="Call Servlet" />
 	</form>
 </body>
 </html>

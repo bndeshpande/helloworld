@@ -6,6 +6,11 @@ import static net.sourceforge.jwebunit.junit.JWebUnit.beginAt;
 import static net.sourceforge.jwebunit.junit.JWebUnit.clickLink;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setBaseUrl;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTestingEngineKey;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertFormPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertFormElementPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextFieldEquals;
+import static net.sourceforge.jwebunit.junit.JWebUnit.setTextField;
+import static net.sourceforge.jwebunit.junit.JWebUnit.submit;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -23,18 +28,21 @@ public class HelloServletTest {
     @Test
     public void testLoginPage() {
         beginAt("index.jsp"); 
-        assertTitleEquals("Login");
-        assertLinkPresent("home");
-        clickLink("home");
-        assertTitleEquals("Home");
+        assertTitleEquals("Hello World");
+		assertFormPresent();
+		assertFormElementPresent("yourName");
+		assertTextFieldEquals("name", "Enter your name here");
+        //assertLinkPresent("home");
+        //clickLink("home");
+        //assertTitleEquals("Home");
     }
     
     @Test
-    public void testHomePage() {
-        beginAt("home.jsp"); 
-        assertTitleEquals("Home");
-        assertLinkPresent("login");
-        clickLink("login");
-        assertTitleEquals("Login");
+    public void testEnterNamePage() {
+        beginAt("index.jsp"); 
+        assertTitleEquals("Hello World");
+		setTextField("callServlet", "Badari");
+        // submit the form (either generically call submit or click on a particular button
+        submit();
     }
 }
