@@ -31,7 +31,7 @@ public class HelloServletTest {
         assertTitleEquals("Hello World");
 		assertFormPresent();
 		assertFormElementPresent("yourName");
-		assertTextFieldEquals("yourName", "Enter your name here");
+		//assertTextFieldEquals("yourName", "Enter your name here");
         //assertLinkPresent("home");
         //clickLink("home");
         //assertTitleEquals("Home");
