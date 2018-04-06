@@ -45,7 +45,7 @@ public class HelloServletTest {
 		setTextField("callServlet", "Badari");
         // submit the form (either generically call submit or click on a particular button
         submit();
-		beginAt("/helloServlet");        
+		beginAt("/");        
 		assertTextPresent("Hello Badari");
     }
 	
