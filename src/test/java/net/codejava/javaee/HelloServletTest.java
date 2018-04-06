@@ -49,7 +49,7 @@ public class HelloServletTest {
 	
 	@Test
     public void testFinalPage() {
-        beginAt("/");        
+        beginAt("/helloServlet");        
 		assertTextPresent("Hello Badari");
     }
 }
