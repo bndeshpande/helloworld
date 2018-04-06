@@ -12,7 +12,7 @@ import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextFieldEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTextField;
 import static net.sourceforge.jwebunit.junit.JWebUnit.submit;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextPresent;
-import static net.sourceforge.jwebunit.junit.JWebUnit.assertLabelMatches
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertLabelMatches;
 
 import org.junit.Before;
 import org.junit.Test;
