@@ -44,12 +44,14 @@ public class HelloServletTest {
         assertTitleEquals("Hello World");
 		setTextField("callServlet", "Badari");
         // submit the form (either generically call submit or click on a particular button
-        submit();		
+        submit();
+		beginAt("/helloServlet");        
+		assertTextPresent("Hello Badari");
     }
 	
-	@Test
+	/*@Test
     public void testFinalPage() {
         beginAt("/helloServlet");        
 		assertTextPresent("Hello Badari");
-    }
+    }*/
 }
