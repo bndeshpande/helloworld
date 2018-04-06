@@ -12,6 +12,7 @@ import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextFieldEquals;
 import static net.sourceforge.jwebunit.junit.JWebUnit.setTextField;
 import static net.sourceforge.jwebunit.junit.JWebUnit.submit;
 import static net.sourceforge.jwebunit.junit.JWebUnit.assertTextPresent;
+import static net.sourceforge.jwebunit.junit.JWebUnit.assertLabelMatches
 
 import org.junit.Before;
 import org.junit.Test;
@@ -46,7 +47,7 @@ public class HelloServletTest {
         // submit the form (either generically call submit or click on a particular button
         submit();
 		beginAt("/");        
-		assertTextPresent("Hello Badari");
+		assertLabelMatches("Hello Badari");
     }
 	
 	/*@Test
